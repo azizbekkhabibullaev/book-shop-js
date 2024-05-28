@@ -1,42 +1,28 @@
-# 🚀 Books shop project
+# 🚀 Books shop loyihasi
 
 ## Task
-The books shop owner asked you to create the online shop to buy book with delivery to user's home. He wants the user to be able to look through the books' catalog, see the description of a particular book, add a book to the bag, choose the appropriate date and address to deliver. 
+Kitoblar do'koni egasi sizdan foydalanuvchilar uydan chiqmagan holda kitob sotib olish uchun onlayn-do'kon yaratishingizni so'radi. U foydalanuvchidan kitoblar katalogini ko‘rib chiqish, ma’lum bir kitob haqida ma'lumot ko‘rish, savatga kitob qo‘shish, yetkazib berish uchun tegishli sanani va manzilni tanlash imkoniyatini berishini xohlaydi. 
 
-## Technical requirements
-Compatible browsers: **Google Chrome, Mozilla Firefox**. We primarily develop for Google Chrome. Then we check to see if Mozilla Firefox is breaking our styles.
+#### 🔗 Shu linkka kirib ko'rishingiz mumkin: <a href="https://bayanalex.github.io/rs-books-shop/">Meni bosing!!!</a>
 
-It's **prohibited** to use CSS frameworks (bootstrap, foundation, etc.).  
-It's **prohibited** to use JS frameworks (Angular, React, Vue, etc.).  
-It's **prohibited** to use legacy libraries (jQuery, etc.).
-It's **prohibited** to use up-to-date libraries with a set of helper functions (lodash). 
+## Texnik talablari
+Mos keladigan brauzerlar: **Google Chrome, Mozilla Firefox**. Biz birinchi navbatda Google Chrome uchun dasturni ishlab chiqamiz. Keyin biz Mozilla Firefox da bizning style larimiz buzilyaptimi yoki yo'qligini tekshiramiz.
 
-It's **allowed** to use icon fonts and CSS preprocessors (SCSS).
+CSS kutubxonalaridan (bootstrap, Foundation va boshqalar) foydalanish **taqiqlangan**.  
+JS kutubxona/frameworklaridan (Angular, React, Vue va boshqalar) foydalanish **taqiqlangan**.  
+Eski kutubxonalardan (jQuery va boshqalar) foydalanish **taqiqlangan**.
+Yordamchi funksiyalar to‘plamiga (lodash) ega zamonaviy kutubxonalardan foydalanish **taqiqlangan**.
 
-It's **recommended** to use [normalize.css](https://necolas.github.io/normalize.css/).
+icon fonts va CSS protsessorlaridan (SCSS) foydalanishga **ruxsat berilgan**.
 
-## Repository requirements
-- Create a public repository named "book-shop" on your GitHub account.
-- You should deploy your task using gh-pages or by any other means.
-- The commit history should reflect the development process of the application. Commit names should match the [commit requirements](https://docs.rs.school/#/git-convention)
+[normalize.css](https://necolas.github.io/normalize.css/) dan foydalanish **tavsiya etiladi**.
 
-## Stages of task completion
-**Week_1**: Layout of catalog page 
- * the page should be created through the JavaScript code. It means, you have html file without tags (if you need, you may add main or div as wrapper, not more).
- * all tags should be created in the js code. 
- * styles you should describe in the css file,but you should add css classes to created tags using JavaScript,
- * the delivery form should be implemented in the HTML file ( not thru the js code )
+## Repository talablari
+- GitHub akkauntingizda "book-shop" nomli public repository yarating.
+- Siz o'z loyihangizni gh-pages yoki boshqa ma'noda joylashtirishingiz mumkin.
+- Commit history ilovani ishlab chiqish jarayonini aks ettirishi kerak.
 
-**Week_2**: Add interactive to the pages: 
- * add book to the bag by click on appropriate button or by drag the image of book to the bag (drag and drop). Both options should be implemented
- * show popup with book's description by click on Show more button
- * close popup by click on Close or cross button 
- * remove book from the bag by the appropriate button, 
- * validation of form fields should run after user left the field (blur), 
- * summarize the personal information when user clicks on Complete button
- 
- * ❗ do not forget to submit link to deployed application for cross-check till the end of the deadline
-
+## 💯 Agar ingliz tilini biladigan bo'lsangiz to'liq quyidagi talablarda loyihani bajaring! Agar inglzi tilini bilmasangiz, faqatgina berilgan deploy linkka kirib, berilgan misolni bajarishingiz kifoya.
 ### Scoring criteria (maximum 100 points)
 1. The content of catalog page created thru the JavaScript. User sees the book image, title, author, price, show more and add to bag buttons **+10**
 2. After user clicks on Show more button the popup with description and close button are shown **10**
@@ -61,13 +47,13 @@ It's **recommended** to use [normalize.css](https://necolas.github.io/normalize.
 9. After user fill all mandatory field with valid information, the Complete button become active. **+10**
 10. After user click on Complete button, he will see the summarized information: for instance, The order created. The delivery address is Amazing street house 3 flat 10. Customer John Gald. **5**
 
-### Examples of layout
-Pay attention, it's just the example on how the elements placed. The design is fully **up to students**. The authors of **top-5** most interesting design according to the activists vote will receive additional **20 points**
+### Dizayn qoidalari
+E'tiborli bo'ling, bu misol faqat elementlarning qanday joylashtirilganiga misol. Dizayn to'liq **talabalar ixtiyorida**.
 
-#### 🔗 Example Deployed Link: <a href="https://bayanalex.github.io/rs-books-shop/">Click here</a>
+#### 🔗 Shu linkka kirib ko'rishingiz mumkin: <a href="https://bayanalex.github.io/rs-books-shop/">Meni bosing!!!</a>
 
-### Note
-The json with books information you will find by the [link](books.json).Copy it to your project. To read json data from the file you may use next code 
+### Eslatma
+Kitoblar maʼlumotlari bilan jsonni [link](books.json) orqali topasiz. Uni loyihangizga nusxalang. Fayldan json ma'lumotlarini o'qish uchun quyidagi koddan foydalanishingiz mumkin
 ```javascript   
 fetch('../books.json') //path to the file with json data
         .then(response => {
@@ -77,5 +63,3 @@ fetch('../books.json') //path to the file with json data
             console.log(data);
         });
 ```
-
-How to work with files, asynchronous data and so on will be in the future modules
